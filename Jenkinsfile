@@ -13,12 +13,6 @@ pipeline {
         }
       }
     }
-    stage('Docker Push') {
-      steps {
-            sh "docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD"
-            sh 'docker push darphns/workshop:latest'
-          }
-        }    
     stage('Clean docker image') {
       steps {
         script {
