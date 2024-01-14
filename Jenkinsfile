@@ -13,8 +13,8 @@ pipeline {
     }
     stage('Docker Push') {
       steps {
-          sh "docker login -u devopsprabin -p '%41ry&i*bs#5P7NU12'"
-          sh 'docker push devopsprabin/workshop:latest'
+          sh "docker login -u darphns -p 'Docker@3760'"
+          sh 'docker push darphns/workshop:latest'
         }
       }
     stage('Clean docker image') {
